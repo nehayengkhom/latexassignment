@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>types</title>
+	<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body><p><b><center><font size="7"><font color="purple">Types of Differential Equation</font></font></center></b></p>
+	<p><b>Differential Equation can be divided into several types namely:</b></p>
+	<ul>
+	<li>Ordinary Differential Equations</li>
+     <li>Partial Differential Equations</li>
+     <li>Linear Differential Equations</li>
+     <li>Nonlinear Differential Equations</li>
+     <li>Homogeneous Differential Equations</li>
+     <li>Nonhomogeneous Differential Equations</li>
+ </ul>
+	</p>
+	<p>
+		<ul>
+			<li><b><font size="5">Ordinary Differential Equations:</font></b>
+An ordinary differential equation involves function and its derivatives. It contains only one independent variable and one or more of its derivatives with respect to the variable.
+
+The order of ordinary differential equations is defined as the order of the highest derivative that occurs in the equation. The general form of n<sup>th</sup> order ODE is given as
+
+$$F(x, y, y',…., y_n )=0 $$</li>
+
+<li><b><font size="5">Partial Differential Equations:</font></b> 
+A Partial Differential Equation commonly denoted as PDE is a differential equation containing partial derivatives of the dependent variable (one or more) with more than one independent variable. A PDE for a function u(x<sub>1</sub>,x<sub>2</sub>,……x<sub>n</sub>)is an equation of the form
+
+
+    $$ f(x_1,x_2,...,x_n;u,\frac{\partial u}{\partial x_1},...,\frac{\partial u}{\partial x_n},...\frac{\partial^2 u}{\partial x_1 \partial x_n};...)=0$$</li>
+
+<li><b><font size="5">Linear Differential Equations:</font></b> 
+
+A linear equation or polynomial, with one or more terms, consisting of the derivatives of the dependent variable with respect to one or more independent variables is known as a linear differential equation.
+
+
+A general first-order differential equation is given by the expression:
+
+ $$\frac{dy}{dx}+ Py = Q$$ where y is a function and dy/dx is a derivative.
+
+The solution of the linear differential equation produces the value of variable y.
+
+ </li>
+
+ <li><b><font size="5">Nonlinear Differential Equations:</font></b>
+
+When an equation is not linear in unknown function and its derivatives, then it is said to be a nonlinear differential equation.</li>
+
+<li>
+	<b><font size="5">Homogeneous Equation:</font></b>
+    If M and N of the equation Mdx + Ndy=0 are both of the same degree in x and y and are homogeneous, the equation is said to be <i>homogeneous</i>.
+    Such an equation can be put in the form
+    $$\frac{dy}{dx}=f(\frac{y}{x}).$$
+    Every homogeneous equation of the above type can be easily solved by putting y=vx where v is a function of x, and consequently dy/dx=v+x(dv/dx)=f(v) whereby it reduces to the form v+x(dv/dx)=f(v),i.e., $$ \frac{dx}{x}= \frac{dv}{f(v)-v}$$ in which the variables are seperable.
+
+    <p><b> <font color="green">A Special Form.</font> </b></p>
+    <p><FONT COLOR="BLACK"/>The equation of the form $$ \frac{dy}{dx}= \frac{a_1x+b_1y+c_1}{a_2x+b_2y+c_2};( \frac{a_1}{a_2} \neq \frac{b_1}{b_2}) \cdots (1)$$
+    can be easily solved by putting x=x'+h and y= y'+k, where h and k are constants, so that dx/dx' and dy/dy' and choosing h,k in such a way that, terms indepedent of x,y in both numerator and denominator becomes 
+    $$a_1h+b_1k+c_1=0$$
+    $$a_2h+b_2k+c_2=0 \cdots(2)$$ 
+    For, now the equation reduces to form 
+    $$ \frac{dy'}{dx'}= \frac{a_1x'+b_1y'}{a_2x'+b_2y'} ,$$
+    which is homogeneous in x' and y' and hence solvable by the method of the previous article.</p>
+    <p><b>NOTE 1:</b> The above method obviously fails, a<sub>1</sub>/a<sub>2</sub>=b<sub>1</sub>/b<sub>2</sub>; in this case h and k cannot be determined from equation (2).</p>
+
+   <p><b>NOTE 2:</b> If the equation (1),a<sub>2</sub>=-b<sub>2</sub> then the equation can be solved more easily by grouping the terms suitably.</p>
+</li>
+<li><b><font size="5">Exact Equation:</font></b>
+    The differential equation Mdx + Ndy=0, where both M and N are functions of x and y, is said to be exact when there is a function u of x,y, such that Mdx + Ndy= du, i.e., when Mdx + Ndy becomes a <i>perfect differential.</i>
+    
+    <p>Now, we know from Differential Calculus that Mdx +Ndy should be a perfect differential if $$\frac{\partial M}{\partial y}=\frac{\partial N}{\partial x}.$$
+    Hence, the condition that Mdx +Ndy=0 should be an <i>exact differential equation</i> is $$\frac{\partial M}{\partial y}= \frac{\partial N}{\partial x}.$$</p>
+
+    <p>The method of solving an exact equation of the type Mdx +Ndy=0 is as follows:</p>
+    
+    <p><i>First integrate the terms in Mdx as if y were constant, then integrate the terms in N dy considering x as constant, and, rejecting the terms already obtained, equate the sum of these integrals to a constant.</i></p>
+    
+    <p>This will be the solution of the required equation.</p>
+	
+</li>
+<li><b><font size="5">Linear Equation:</font></b>
+    An equation of the form
+    $$ \frac{dy}{dx}+Py=Q$$
+    in which P and Q are functions of x alone or constants is called a linear equation of the first order.
+
+    <p>The general solution of the above equation can be found as follows.</p>
+    <p>Multiply both sides of the equation by $$ e^{\int Pdx}.$$
+    $$\therefore \frac{dy}{dx}  e^{\int Pdx}+Py e^{\int Pdx} = Qe^{\int Pdx},$$
+    ie.,$$\frac{d}{dx}(y e^{\int Pdx})=Q e^{\int Pdx}$$
+    integrating,
+    $$ye^{\int Pdx} = \int Q e^{\int P dx}dx + C,$$
+    or, $$y= e^{-\int {P dx}} [\int Q e^{\int P dx}dx + C]$$ is the required solution.</p>
+
+    <p><b><font color="green">Cor.1.</b></font>If in the above equation Q is zero, the general solution is $$ y= C e^{-\int Pdx}.$$</p>
+
+    <p><b><font color="green">Cor.2.</b></font>If P be a constant and equals to -m, then the solution is
+    $$ y= e^{mx}[\int e^{-mx} Qdx+ C].$$</p>
+
+    <p><b>Note:</b> Here the factor $$e^{-\int Pdx},$$ which renders the left hand member of the equation a perfect differential, is called Integrating Factor.</p>
+	
+</li>
+
+		</ul>
+	</p>
+
+</body>
+</html>
